@@ -16,7 +16,7 @@ export default function PropertyAlertSignup() {
     bedrooms: '',
     bathrooms: '',
     propertyType: '',
-    features: []
+    features: [] as string[]
   })
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -32,7 +32,7 @@ export default function PropertyAlertSignup() {
       bedrooms: '',
       bathrooms: '',
       propertyType: '',
-      features: []
+      features: [] as string[]
     })
   }
 
