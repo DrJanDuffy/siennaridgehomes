@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Simple v0 - AI-Powered App Generator',
     description: 'The simplest way to use v0 - just prompt and see your app generated instantly. Build AI-powered apps with real-time generation and seamless deployment to Vercel.',
-    url: 'https://siennaridgehomes.com',
+    url: 'https://www.siennaridgehomes.com',
     siteName: 'Sienna Ridge Homes',
     images: ['/og-image.png'],
     locale: 'en_US',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     creator: '@DrJanDuffy',
   },
   alternates: {
-    canonical: 'https://siennaridgehomes.com',
+    canonical: 'https://www.siennaridgehomes.com',
   },
 }
 
@@ -91,7 +91,7 @@ export default function RootLayout({
               "@type": "WebApplication",
               "name": "Simple v0 - AI-Powered App Generator",
               "description": "The simplest way to use v0 - just prompt and see your app generated instantly. Build AI-powered apps with real-time generation and seamless deployment to Vercel.",
-              "url": "https://siennaridgehomes.com",
+              "url": "https://www.siennaridgehomes.com",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Web Browser",
               "offers": {
@@ -102,12 +102,12 @@ export default function RootLayout({
               "author": {
                 "@type": "Person",
                 "name": "Dr. Janet Duffy",
-                "url": "https://siennaridgehomes.com"
+                "url": "https://www.siennaridgehomes.com"
               },
               "publisher": {
                 "@type": "Organization",
                 "name": "Sienna Ridge Homes",
-                "url": "https://siennaridgehomes.com"
+                "url": "https://www.siennaridgehomes.com"
               },
               "keywords": "v0, AI, app generator, Next.js, React, Vercel, artificial intelligence, code generation"
             }
