@@ -6,8 +6,8 @@ import { Phone, Mail, MapPin, Award, Users, Home, Star } from 'lucide-react'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'About Dr. Jan Duffy - Sienna Ridge Real Estate Expert',
-  description: 'Meet Dr. Jan Duffy, your premier buyer agent for Sienna Ridge, Las Vegas. Expert guidance, local knowledge, and personalized service for your home buying journey.',
+  title: 'About Dr. Jan Duffy - Southwest Las Vegas Real Estate Expert',
+  description: 'Meet Dr. Jan Duffy, your premier buyer agent for Spring Valley & Southwest Las Vegas (89117, 89147, 89148). Expert guidance, local knowledge, and personalized service for your home buying journey.',
 }
 
 export default function AboutPage() {
@@ -32,7 +32,7 @@ export default function AboutPage() {
               Meet Dr. Jan Duffy
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Your Premier Sienna Ridge Real Estate Expert
+              Your Premier Southwest Las Vegas Real Estate Expert
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
@@ -41,7 +41,7 @@ export default function AboutPage() {
               </Badge>
               <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
                 <MapPin className="h-4 w-4 mr-2" />
-                Sienna Ridge Specialist
+                Spring Valley Specialist
               </Badge>
               <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
                 <Users className="h-4 w-4 mr-2" />

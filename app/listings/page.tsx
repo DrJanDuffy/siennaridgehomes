@@ -8,8 +8,8 @@ import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search, TrendingUp
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Sienna Ridge Homes for Sale - Available Listings',
-  description: 'Browse available homes for sale in Sienna Ridge, Las Vegas. Find your dream home with expert guidance from Dr. Jan Duffy.',
+  title: 'Southwest Las Vegas Homes for Sale - Spring Valley Listings',
+  description: 'Browse available homes for sale in Southwest Las Vegas / Spring Valley (89117, 89147, 89148). Find your dream home with expert guidance from Dr. Jan Duffy.',
 }
 
 export default function ListingsPage() {
@@ -31,10 +31,10 @@ export default function ListingsPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Sienna Ridge Homes for Sale
+              Southwest Las Vegas Homes for Sale
             </h1>
             <p className="text-lg md:text-xl mb-6">
-              Discover available properties in Sienna Ridge with expert guidance from Dr. Jan Duffy
+              Discover available properties in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with expert guidance from Dr. Jan Duffy
             </p>
             <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
               <Home className="h-4 w-4 mr-2" />
@@ -49,10 +49,10 @@ export default function ListingsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Sienna Ridge Real Estate Market Overview</h2>
+              <h2 className="text-3xl font-bold mb-4">Southwest Las Vegas Real Estate Market Overview</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Sienna Ridge represents one of Las Vegas's most desirable master-planned communities, 
-                offering luxury new construction homes with exceptional amenities and investment potential.
+                Spring Valley & Southwest Las Vegas (89117, 89147, 89148) represent one of Las Vegas's most desirable areas, 
+                offering a mix of established homes and newer developments with exceptional investment potential.
               </p>
             </div>
             
@@ -66,9 +66,9 @@ export default function ListingsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    The Sienna Ridge market continues to show strong appreciation with increasing demand 
-                    for new construction homes. Properties in this area maintain excellent resale value 
-                    due to the community's amenities and location.
+                    The Southwest Las Vegas market continues to show strong appreciation with increasing demand 
+                    for both established homes and newer developments. Properties in this area maintain excellent resale value 
+                    and strong rental yields due to the prime location and growing population.
                   </p>
                 </CardContent>
               </Card>
@@ -82,9 +82,9 @@ export default function ListingsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Strategically located with easy access to major highways, shopping centers, 
+                    Strategically located in Southwest Las Vegas with easy access to major highways, shopping centers, 
                     entertainment venues, and the Las Vegas Strip. Close proximity to McCarran 
-                    Airport makes travel convenient.
+                    Airport and major employment centers makes this area highly desirable.
                   </p>
                 </CardContent>
               </Card>
@@ -98,9 +98,9 @@ export default function ListingsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Residents enjoy resort-style amenities including community pools, fitness centers, 
-                    parks, playgrounds, and walking trails. The master-planned community offers 
-                    an exceptional lifestyle.
+                    Residents enjoy excellent amenities including community pools, fitness centers, 
+                    parks, playgrounds, and walking trails. Both established neighborhoods and newer developments offer 
+                    exceptional lifestyle opportunities for families and investors.
                   </p>
                 </CardContent>
               </Card>

@@ -21,8 +21,8 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
-  description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes and luxury properties.',
+  title: 'Southwest Las Vegas Real Estate - Dr. Jan Duffy, Spring Valley Specialist',
+  description: 'Find your dream home in Southwest Las Vegas / Spring Valley (89117, 89147, 89148) with Dr. Jan Duffy. Expert guidance for families, investors, and first-time buyers in this outperforming market.',
 }
 
 export default function HomePage() {
@@ -46,10 +46,10 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Sienna Ridge by Lennar
+                  Southwest Las Vegas Real Estate
                 </h1>
                 <p className="text-xl mb-8 text-blue-100">
-                  Discover luxury new construction homes in Las Vegas with Dr. Jan Duffy, your premier Sienna Ridge specialist
+                  Discover homes in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier area specialist
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8">
                   <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
@@ -58,11 +58,11 @@ export default function HomePage() {
                   </Badge>
                   <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
                     <MapPin className="h-4 w-4 mr-2" />
-                    Sienna Ridge Expert
+                    Spring Valley Expert
                   </Badge>
                   <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
-                    <Users className="h-4 w-4 mr-2" />
-                    100+ Happy Clients
+                    <TrendingUp className="h-4 w-4 mr-2" />
+                    2025 Market Leader
                   </Badge>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -90,9 +90,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Why Choose Dr. Jan Duffy for Sienna Ridge?</h2>
+              <h2 className="text-3xl font-bold mb-4">Why Choose Dr. Jan Duffy for Southwest Las Vegas?</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                With years of experience in Las Vegas real estate, Dr. Jan Duffy has helped over 100 families find their dream homes in Sienna Ridge and surrounding areas.
+                With years of experience in Las Vegas real estate, Dr. Jan Duffy has helped over 100 families find their dream homes in Spring Valley, Southwest Las Vegas (89117, 89147, 89148), and surrounding areas.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mb-12">
@@ -166,9 +166,9 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Lennar Home Models at Sienna Ridge</h2>
+              <h2 className="text-3xl font-bold mb-4">Southwest Las Vegas Market Overview</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover Lennar's innovative home designs featuring smart home technology and energy-efficient features
+                Spring Valley & Southwest Las Vegas (89117, 89147, 89148) offer exceptional opportunities for families, investors, and first-time buyers in a market expected to outperform metro averages in 2025.
               </p>
             </div>
             
@@ -187,9 +187,9 @@ export default function HomePage() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Single Story Living</h3>
+                  <h3 className="text-xl font-semibold mb-2">Established Homes (89117, 89147)</h3>
                   <p className="text-gray-600 mb-4">
-                    Perfect for those seeking convenience and accessibility with open floor plans and modern finishes.
+                    Well-maintained established homes in Spring Valley with mature landscaping, larger lots, and proven neighborhoods.
                   </p>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
@@ -201,8 +201,8 @@ export default function HomePage() {
                       <span>2-3</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Starting From:</span>
-                      <span className="font-semibold text-blue-600">$450,000</span>
+                      <span>Price Range:</span>
+                      <span className="font-semibold text-blue-600">$350K-$500K</span>
                     </div>
                   </div>
                 </CardContent>
@@ -222,9 +222,9 @@ export default function HomePage() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Two Story Homes</h3>
+                  <h3 className="text-xl font-semibold mb-2">Newer Developments (89148)</h3>
                   <p className="text-gray-600 mb-4">
-                    Spacious two-story designs with gourmet kitchens, master suites, and flexible living spaces.
+                    Modern new construction homes with contemporary finishes, energy-efficient features, and resort-style amenities.
                   </p>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
@@ -236,8 +236,8 @@ export default function HomePage() {
                       <span>3-4</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Starting From:</span>
-                      <span className="font-semibold text-blue-600">$525,000</span>
+                      <span>Price Range:</span>
+                      <span className="font-semibold text-blue-600">$450K-$650K</span>
                     </div>
                   </div>
                 </CardContent>
@@ -257,22 +257,22 @@ export default function HomePage() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Executive Collection</h3>
+                  <h3 className="text-xl font-semibold mb-2">Investment Properties</h3>
                   <p className="text-gray-600 mb-4">
-                    Luxury executive homes with premium finishes, large lots, and resort-style outdoor living.
+                    Strong rental market with excellent cash flow potential. Perfect for investors seeking stable returns in a growing market.
                   </p>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span>Bedrooms:</span>
-                      <span>4-6</span>
+                      <span>3-4</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Bathrooms:</span>
-                      <span>4-5</span>
+                      <span>2-3</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Starting From:</span>
-                      <span className="font-semibold text-blue-600">$650,000</span>
+                      <span>Rental Yield:</span>
+                      <span className="font-semibold text-green-600">6-8%</span>
                     </div>
                   </div>
                 </CardContent>
@@ -280,35 +280,35 @@ export default function HomePage() {
             </div>
 
             <div className="text-center mt-12">
-              <h3 className="text-2xl font-bold mb-4">Lennar's Signature Features</h3>
+              <h3 className="text-2xl font-bold mb-4">Why Southwest Las Vegas is a Smart Investment</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center">
                   <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                    <Home className="h-8 w-8 text-blue-600" />
+                    <TrendingUp className="h-8 w-8 text-blue-600" />
                   </div>
-                  <h4 className="font-semibold mb-2">Smart Home</h4>
-                  <p className="text-sm text-gray-600">Wi-Fi Certified smart home technology included</p>
+                  <h4 className="font-semibold mb-2">2025 Market Leader</h4>
+                  <p className="text-sm text-gray-600">Expected to outperform metro average growth</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                    <Star className="h-8 w-8 text-green-600" />
+                    <DollarSign className="h-8 w-8 text-green-600" />
                   </div>
-                  <h4 className="font-semibold mb-2">Energy Efficient</h4>
-                  <p className="text-sm text-gray-600">ENERGY STAR certified appliances and features</p>
+                  <h4 className="font-semibold mb-2">Strong Rental Market</h4>
+                  <p className="text-sm text-gray-600">Excellent cash flow potential for investors</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-                    <Award className="h-8 w-8 text-purple-600" />
+                    <MapPin className="h-8 w-8 text-purple-600" />
                   </div>
-                  <h4 className="font-semibold mb-2">Everything Included</h4>
-                  <p className="text-sm text-gray-600">Premium finishes and features included in base price</p>
+                  <h4 className="font-semibold mb-2">Prime Location</h4>
+                  <p className="text-sm text-gray-600">Close to Strip, airport, and major employers</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
                     <Users className="h-8 w-8 text-orange-600" />
                   </div>
-                  <h4 className="font-semibold mb-2">Warranty</h4>
-                  <p className="text-sm text-gray-600">Comprehensive warranty coverage and support</p>
+                  <h4 className="font-semibold mb-2">Family Friendly</h4>
+                  <p className="text-sm text-gray-600">Great schools, parks, and community amenities</p>
                 </div>
               </div>
             </div>
@@ -323,7 +323,7 @@ export default function HomePage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Get Your Home's Value</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover what your Sienna Ridge property is worth with our instant valuation tool
+                Discover what your Southwest Las Vegas property is worth with our instant valuation tool
               </p>
             </div>
             
@@ -349,10 +349,10 @@ export default function HomePage() {
                     <MapPin className="h-6 w-6 text-blue-600 mt-1" />
                     <div>
                       <h4 className="font-semibold">Local Expertise</h4>
-                      <p className="text-gray-600">Sienna Ridge area-specific valuations</p>
+                      <p className="text-gray-600">Spring Valley & Southwest Las Vegas area-specific valuations</p>
                       <div className="mt-2 p-2 bg-gray-100 rounded text-xs">
-                        <p className="font-medium">Example: 8370 Caldera Hills Avenue</p>
-                        <p className="text-gray-500">Las Vegas, NV 89147</p>
+                        <p className="font-medium">Coverage Areas:</p>
+                        <p className="text-gray-500">89117, 89147, 89148</p>
                       </div>
                     </div>
                   </div>
@@ -397,10 +397,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Welcome to Sienna Ridge by Lennar</h2>
+              <h2 className="text-3xl font-bold mb-4">Welcome to Southwest Las Vegas / Spring Valley</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Experience luxury living in Las Vegas with Lennar's newest master-planned community. 
-                Featuring stunning new construction homes, resort-style amenities, and an exceptional lifestyle.
+                Experience the best of Las Vegas living in Spring Valley and Southwest Las Vegas (89117, 89147, 89148). 
+                A thriving community with established neighborhoods, new developments, and exceptional investment opportunities.
               </p>
             </div>
             
@@ -414,13 +414,13 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Strategically located in Las Vegas with easy access to major highways, 
+                    Strategically located in Southwest Las Vegas with easy access to major highways, 
                     shopping centers, and entertainment venues. Close to the Las Vegas Strip and McCarran Airport.
                   </p>
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-                    <p className="text-sm font-semibold text-blue-800">Dr. Jan Duffy's Office</p>
-                    <p className="text-sm text-blue-600">8370 Caldera Hills Avenue</p>
-                    <p className="text-xs text-blue-500">Las Vegas, NV 89147</p>
+                    <p className="text-sm font-semibold text-blue-800">Coverage Areas</p>
+                    <p className="text-sm text-blue-600">89117, 89147, 89148</p>
+                    <p className="text-xs text-blue-500">Spring Valley & Southwest Las Vegas</p>
                   </div>
                 </CardContent>
               </Card>
@@ -434,8 +434,8 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Enjoy Lennar's signature resort-style amenities including community pools, fitness centers, 
-                    parks, playgrounds, and walking trails throughout the master-planned community.
+                    Enjoy excellent amenities including community pools, fitness centers, 
+                    parks, playgrounds, and walking trails throughout the established and newer neighborhoods.
                   </p>
                 </CardContent>
               </Card>
@@ -449,8 +449,8 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Strong appreciation potential with growing demand and 
-                    limited inventory in this desirable Las Vegas location.
+                    Strong appreciation potential with growing demand and limited inventory. 
+                    Perfect for both families and investors seeking stable returns in a market expected to outperform in 2025.
                   </p>
                 </CardContent>
               </Card>
@@ -581,8 +581,8 @@ export default function HomePage() {
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Search live MLS listings and get instant property valuations with Dr. Jan Duffy's expertise
               </p>
-            </div>
-            
+      </div>
+
             {/* RealScout Search Widgets */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               {/* Simple Search */}
@@ -663,9 +663,9 @@ export default function HomePage() {
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Find Your Sienna Ridge Home?</h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Find Your Southwest Las Vegas Home?</h2>
             <p className="text-xl mb-8">
-              Let Dr. Jan Duffy guide you through your home buying journey with expert knowledge and personalized service.
+              Let Dr. Jan Duffy guide you through your home buying journey in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with expert knowledge and personalized service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">

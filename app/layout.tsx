@@ -1,27 +1,21 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import Script from 'next/script'
 import DeployBanner from '../components/deploy-banner'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const inter = Inter({
   subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
-  title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
-  description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.',
-  keywords: ['Sienna Ridge', 'Las Vegas real estate', 'Dr. Jan Duffy', 'new homes', 'Lennar homes', 'Las Vegas homes', 'real estate agent', 'buyer agent', 'Nevada real estate'],
+  title: 'Southwest Las Vegas Real Estate | Homes By Dr. Jan Duffy',
+  description: 'Find your dream home in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier buyer agent. Expert guidance for families, investors, and first-time buyers.',
+  keywords: ['Spring Valley', 'Southwest Las Vegas', '89117', '89147', '89148', 'Las Vegas real estate', 'Dr. Jan Duffy', 'investment properties', 'rental market', 'Las Vegas homes', 'real estate agent', 'buyer agent', 'Nevada real estate'],
   authors: [{ name: 'Dr. Jan Duffy' }],
   creator: 'Dr. Jan Duffy',
-  publisher: 'Sienna Ridge Homes',
+  publisher: 'Southwest Las Vegas Homes',
   robots: {
     index: true,
     follow: true,
@@ -37,18 +31,18 @@ export const metadata: Metadata = {
     google: 'YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', // Replace with your actual verification code
   },
   openGraph: {
-    title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
-    description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy, your premier buyer agent. Expert guidance for new construction homes and luxury properties.',
+    title: 'Southwest Las Vegas Real Estate | Homes By Dr. Jan Duffy',
+    description: 'Find your dream home in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier buyer agent. Expert guidance for families, investors, and first-time buyers.',
     url: 'https://www.siennaridgehomes.com',
-    siteName: 'Sienna Ridge Homes',
+    siteName: 'Southwest Las Vegas Homes',
     images: ['/og-image.png'],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
-    description: 'Find your dream home in Sienna Ridge, Las Vegas with expert guidance from Dr. Jan Duffy.',
+    title: 'Southwest Las Vegas Real Estate | Homes By Dr. Jan Duffy',
+    description: 'Find your dream home in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with expert guidance from Dr. Jan Duffy.',
     images: ['/og-image.png'],
     creator: '@DrJanDuffy',
   },
@@ -114,9 +108,9 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+          <body
+            className={`${inter.className} antialiased`}
+          >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
