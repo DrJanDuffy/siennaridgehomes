@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -52,10 +53,15 @@ export default function ListingsPage() {
       {/* Header Section */}
       <section className="relative py-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
-        ></div>
+            <div className="absolute inset-0">
+              <Image
+                src="/images/hero-listings.jpg"
+                alt="Southwest Las Vegas Homes for Sale - Spring Valley Listings"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -372,12 +378,16 @@ export default function ListingsPage() {
 
             {/* Sample Property Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Sample Property 1 */}
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div 
-                  className="h-48 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
-                ></div>
+                  {/* Sample Property 1 */}
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="h-48 relative">
+                      <Image
+                        src="/images/property-sample-1.jpg"
+                        alt="New construction home in Spring Valley"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-green-100 text-green-800">
@@ -415,12 +425,16 @@ export default function ListingsPage() {
                 </CardContent>
               </Card>
 
-              {/* Sample Property 2 */}
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div 
-                  className="h-48 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
-                ></div>
+                  {/* Sample Property 2 */}
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="h-48 relative">
+                      <Image
+                        src="/images/property-sample-2.jpg"
+                        alt="Available home in Southwest Las Vegas"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-blue-100 text-blue-800">
@@ -458,12 +472,16 @@ export default function ListingsPage() {
                 </CardContent>
               </Card>
 
-              {/* Sample Property 3 */}
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div 
-                  className="h-48 bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
-                ></div>
+                  {/* Sample Property 3 */}
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="h-48 relative">
+                      <Image
+                        src="/images/property-sample-3.jpg"
+                        alt="Investment opportunity in Las Vegas"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-purple-100 text-purple-800">

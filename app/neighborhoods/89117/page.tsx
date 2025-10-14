@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -58,10 +59,15 @@ export default function SpringValley89117Page() {
       {/* Hero Section */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80')" }}
-        ></div>
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-spring-valley.jpg"
+            alt="Spring Valley Real Estate - Beautiful neighborhood in Southwest Las Vegas"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">

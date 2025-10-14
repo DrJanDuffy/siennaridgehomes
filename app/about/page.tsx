@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -50,10 +51,15 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80')" }}
-        ></div>
+            <div className="absolute inset-0">
+              <Image
+                src="/images/hero-about.jpg"
+                alt="Dr. Jan Duffy - Southwest Las Vegas Real Estate Expert"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -86,11 +92,15 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                {/* Professional photo */}
-                <div 
-                  className="rounded-lg h-96 bg-cover bg-center bg-no-repeat shadow-lg"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
-                ></div>
+                    {/* Professional photo */}
+                    <div className="rounded-lg h-96 relative shadow-lg overflow-hidden">
+                      <Image
+                        src="/images/professional-photo.jpg"
+                        alt="Dr. Jan Duffy - Professional Real Estate Agent"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">
