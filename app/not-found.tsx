@@ -5,6 +5,24 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Home, Search, ArrowLeft, MapPin, Phone, Mail } from 'lucide-react'
 import Script from 'next/script'
 
+// Type declarations for RealScout web components
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'realscout-simple-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-home-value': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: 'Page Not Found - Sienna Ridge Homes | Dr. Jan Duffy',
   description: 'The page you\'re looking for doesn\'t exist. Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy\'s expert guidance.',

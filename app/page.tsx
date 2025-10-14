@@ -20,6 +20,39 @@ import {
   DollarSign
 } from 'lucide-react'
 
+// Type declarations for RealScout web components
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'realscout-simple-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-advanced-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-office-listings': {
+        'agent-encoded-id': string
+        'sort-order'?: string
+        'listing-status'?: string
+        'property-types'?: string
+        'price-min'?: string
+        'price-max'?: string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-home-value': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: 'Southwest Las Vegas Real Estate - Dr. Jan Duffy, Spring Valley Specialist',
   description: 'Find your dream home in Southwest Las Vegas / Spring Valley (89117, 89147, 89148) with Dr. Jan Duffy. Expert guidance for families, investors, and first-time buyers in this outperforming market.',

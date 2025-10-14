@@ -7,6 +7,34 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search, TrendingUp, Star } from 'lucide-react'
 import Script from 'next/script'
 
+// Type declarations for RealScout web components
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'realscout-simple-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-advanced-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-office-listings': {
+        'agent-encoded-id': string
+        'sort-order'?: string
+        'listing-status'?: string
+        'property-types'?: string
+        'price-min'?: string
+        'price-max'?: string
+        style?: React.CSSProperties
+        className?: string
+      }
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: 'Southwest Las Vegas Homes for Sale - Spring Valley Listings',
   description: 'Browse available homes for sale in Southwest Las Vegas / Spring Valley (89117, 89147, 89148). Find your dream home with expert guidance from Dr. Jan Duffy.',

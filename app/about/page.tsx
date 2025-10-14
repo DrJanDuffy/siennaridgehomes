@@ -5,6 +5,34 @@ import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Award, Users, Home, Star } from 'lucide-react'
 import Script from 'next/script'
 
+// Type declarations for RealScout web components
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'realscout-simple-search': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-home-value': {
+        'agent-encoded-id': string
+        style?: React.CSSProperties
+        className?: string
+      }
+      'realscout-office-listings': {
+        'agent-encoded-id': string
+        'sort-order'?: string
+        'listing-status'?: string
+        'property-types'?: string
+        'price-min'?: string
+        'price-max'?: string
+        style?: React.CSSProperties
+        className?: string
+      }
+    }
+  }
+}
+
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy - Southwest Las Vegas Real Estate Expert',
   description: 'Meet Dr. Jan Duffy, your premier buyer agent for Spring Valley & Southwest Las Vegas (89117, 89147, 89148). Expert guidance, local knowledge, and personalized service for your home buying journey.',
@@ -272,17 +300,18 @@ export default function AboutPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <div className="flex justify-center">
-                    <realscout-simple-search 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-ss-font-primary-color': '#6a6d72',
-                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
-                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
-                        '--rs-ss-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
-                  </div>
+                    <div className="flex justify-center">
+                      {/* @ts-ignore */}
+                      <realscout-simple-search 
+                        agent-encoded-id="QWdlbnQtMjI1MDUw"
+                        style={{
+                          '--rs-ss-font-primary-color': '#6a6d72',
+                          '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                          '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                          '--rs-ss-widget-width': '100%'
+                        } as React.CSSProperties}
+                      />
+                    </div>
                 </CardContent>
               </Card>
 
@@ -296,19 +325,20 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="flex justify-center">
-                    <realscout-home-value 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-hvw-background-color': '#ffffff',
-                        '--rs-hvw-title-color': '#000000',
-                        '--rs-hvw-subtitle-color': 'rgba(28, 30, 38, 0.5)',
-                        '--rs-hvw-primary-button-text-color': '#ffffff',
-                        '--rs-hvw-primary-button-color': 'rgb(35, 93, 137)',
-                        '--rs-hvw-secondary-button-text-color': 'rgb(35, 93, 137)',
-                        '--rs-hvw-secondary-button-color': '#ffffff',
-                        '--rs-hvw-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
+                      {/* @ts-ignore */}
+                      <realscout-home-value 
+                        agent-encoded-id="QWdlbnQtMjI1MDUw"
+                        style={{
+                          '--rs-hvw-background-color': '#ffffff',
+                          '--rs-hvw-title-color': '#000000',
+                          '--rs-hvw-subtitle-color': 'rgba(28, 30, 38, 0.5)',
+                          '--rs-hvw-primary-button-text-color': '#ffffff',
+                          '--rs-hvw-primary-button-color': 'rgb(35, 93, 137)',
+                          '--rs-hvw-secondary-button-text-color': 'rgb(35, 93, 137)',
+                          '--rs-hvw-secondary-button-color': '#ffffff',
+                          '--rs-hvw-widget-width': '100%'
+                        } as React.CSSProperties}
+                      />
                   </div>
                 </CardContent>
               </Card>
@@ -323,18 +353,19 @@ export default function AboutPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-6">
-                <realscout-office-listings 
-                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                  sort-order="NEWEST" 
-                  listing-status="For Sale,In Contract" 
-                  property-types=",SFR" 
-                  price-min="500000" 
-                  price-max="600000"
-                  style={{
-                    '--rs-listing-divider-color': '#0e64c8',
-                    'width': '100%'
-                  } as React.CSSProperties}
-                />
+                    {/* @ts-ignore */}
+                    <realscout-office-listings 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                      sort-order="NEWEST" 
+                      listing-status="For Sale,In Contract" 
+                      property-types=",SFR" 
+                      price-min="500000" 
+                      price-max="600000"
+                      style={{
+                        '--rs-listing-divider-color': '#0e64c8',
+                        'width': '100%'
+                      } as React.CSSProperties}
+                    />
               </CardContent>
             </Card>
           </div>
