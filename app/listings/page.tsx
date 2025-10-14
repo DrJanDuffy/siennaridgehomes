@@ -9,7 +9,7 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Sienna Ridge Homes for Sale - Available Listings',
-  description: 'Browse available homes for sale in Sienna Ridge, Las Vegas. Find your dream home with expert guidance from Dr. Janet Duffy.',
+  description: 'Browse available homes for sale in Sienna Ridge, Las Vegas. Find your dream home with expert guidance from Dr. Jan Duffy.',
 }
 
 export default function ListingsPage() {
@@ -29,7 +29,7 @@ export default function ListingsPage() {
               Sienna Ridge Homes for Sale
             </h1>
             <p className="text-lg md:text-xl mb-6">
-              Discover available properties in Sienna Ridge with expert guidance from Dr. Janet Duffy
+              Discover available properties in Sienna Ridge with expert guidance from Dr. Jan Duffy
             </p>
             <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
               <Home className="h-4 w-4 mr-2" />

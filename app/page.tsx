@@ -44,7 +44,7 @@ export default function HomePage() {
                   Your Sienna Ridge Home Awaits
                 </h1>
                 <p className="text-xl mb-8 text-blue-100">
-                  Expert guidance from Dr. Janet Duffy, your premier buyer agent for Sienna Ridge, Las Vegas
+                  Expert guidance from Dr. Jan Duffy, your premier buyer agent for Sienna Ridge, Las Vegas
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8">
                   <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
@@ -374,10 +374,10 @@ export default function HomePage() {
                 <Phone className="h-4 w-4 mr-2" />
                 Call (702) 555-0123
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                <Mail className="h-4 w-4 mr-2" />
-                Email Dr. Duffy
-              </Button>
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                    <Mail className="h-4 w-4 mr-2" />
+                    Email DrJanSells@SiennaRidgeHomes.com
+                  </Button>
             </div>
           </div>
         </div>

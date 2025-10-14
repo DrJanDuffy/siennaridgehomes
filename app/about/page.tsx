@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Award, Users, Home, Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Dr. Janet Duffy - Sienna Ridge Real Estate Expert',
-  description: 'Meet Dr. Janet Duffy, your premier buyer agent for Sienna Ridge, Las Vegas. Expert guidance, local knowledge, and personalized service for your home buying journey.',
+  title: 'About Dr. Jan Duffy - Sienna Ridge Real Estate Expert',
+  description: 'Meet Dr. Jan Duffy, your premier buyer agent for Sienna Ridge, Las Vegas. Expert guidance, local knowledge, and personalized service for your home buying journey.',
 }
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet Dr. Janet Duffy
+              Meet Dr. Jan Duffy
             </h1>
             <p className="text-xl md:text-2xl mb-8">
               Your Premier Sienna Ridge Real Estate Expert
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   <div className="text-center text-gray-500">
                     <Users className="h-16 w-16 mx-auto mb-4" />
                     <p className="text-lg font-semibold">Professional Photo</p>
-                    <p className="text-sm">Dr. Janet Duffy</p>
+                    <p className="text-sm">Dr. Jan Duffy</p>
                     <p className="text-xs mt-2">Replace with professional headshot</p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                   Your Trusted Sienna Ridge Expert
                 </h2>
                 <p className="text-lg text-gray-600">
-                  With years of experience in Las Vegas real estate, Dr. Janet Duffy has become 
+                  With years of experience in Las Vegas real estate, Dr. Jan Duffy has become 
                   the go-to expert for buyers looking to make Sienna Ridge their home. Her deep 
                   knowledge of the community, builder relationships, and market trends ensures 
                   you get the best possible guidance.
@@ -256,7 +256,7 @@ export default function AboutPage() {
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
                 <Mail className="h-4 w-4 mr-2" />
-                Email Dr. Duffy
+                Email DrJanSells@SiennaRidgeHomes.com
               </Button>
             </div>
           </div>
