@@ -36,6 +36,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/neighborhoods/89117" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Spring Valley (89117)
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="text-gray-300 hover:text-blue-400 transition-colors">
                   About Dr. Duffy
                 </Link>
@@ -60,8 +65,8 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <a href="tel:+17025550123" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  (702) 555-0123
+                <a href="tel:+17029033336" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  (702) 903-3336
                 </a>
               </div>
               <div className="flex items-center space-x-3">

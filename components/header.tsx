@@ -31,6 +31,9 @@ export default function Header() {
             <Link href="/listings" className="text-gray-700 hover:text-blue-600 transition-colors">
               Listings
             </Link>
+            <Link href="/neighborhoods/89117" className="text-gray-700 hover:text-blue-600 transition-colors">
+              Spring Valley
+            </Link>
             <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
               About Dr. Duffy
             </Link>
@@ -79,6 +82,13 @@ export default function Header() {
                 Listings
               </Link>
               <Link 
+                href="/neighborhoods/89117" 
+                className="text-gray-700 hover:text-blue-600 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Spring Valley
+              </Link>
+              <Link 
                 href="/about" 
                 className="text-gray-700 hover:text-blue-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
@@ -102,7 +112,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Phone className="h-4 w-4 mr-2" />
-                  Call (702) 555-0123
+                  Call (702) 903-3336
                 </Button>
               </div>
             </nav>

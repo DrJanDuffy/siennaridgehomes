@@ -347,7 +347,7 @@ export default function ListingsPage() {
                     </div>
                     <div className="flex items-center gap-1">
                       <Phone className="h-4 w-4" />
-                      <span>(702) 555-0123</span>
+                      <span>(702) 903-3336</span>
                     </div>
                   </div>
                   <p className="text-sm text-gray-600 mb-4">

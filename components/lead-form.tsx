@@ -79,7 +79,7 @@ export default function LeadForm() {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="(702) 555-0123"
+                placeholder="(702) 903-3336"
               />
             </div>
             <div className="space-y-2">

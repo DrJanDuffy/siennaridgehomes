@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.siennaridgehomes.com'),
   title: 'Spring Valley Real Estate Agent | Dr. Jan Duffy | Southwest Las Vegas Homes',
   description: 'Top Spring Valley real estate agent Dr. Jan Duffy specializes in Southwest Las Vegas homes (89117, 89147, 89148). Expert buyer agent for families, investors & first-time buyers. Free home valuation & market insights.',
   keywords: [
@@ -116,7 +117,7 @@ export default function RootLayout({
               "name": "Dr. Jan Duffy",
               "description": "Premier Spring Valley real estate agent specializing in Southwest Las Vegas homes (89117, 89147, 89148). Expert buyer agent for families, investors, and first-time home buyers.",
               "url": "https://www.siennaridgehomes.com",
-              "telephone": "(702) 555-0123",
+              "telephone": "(702) 903-3336",
               "email": "DrJanSells@SiennaRidgeHomes.com",
               "address": {
                 "@type": "PostalAddress",
@@ -184,7 +185,7 @@ export default function RootLayout({
               "name": "Dr. Jan Duffy Real Estate",
               "description": "Spring Valley real estate services specializing in Southwest Las Vegas homes for sale, buyer representation, and property valuations.",
               "url": "https://www.siennaridgehomes.com",
-              "telephone": "(702) 555-0123",
+              "telephone": "(702) 903-3336",
               "email": "DrJanSells@SiennaRidgeHomes.com",
               "address": {
                 "@type": "PostalAddress",
