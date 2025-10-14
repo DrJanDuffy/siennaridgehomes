@@ -1,6 +1,7 @@
 {
-  "name": "simple-v0",
-  "version": "0.1.5",
+  "name": "sienna-ridge-homes",
+  "version": "1.0.0",
+  "description": "Southwest Las Vegas Real Estate Website - Dr. Jan Duffy",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

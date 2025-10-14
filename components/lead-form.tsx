@@ -38,9 +38,9 @@ export default function LeadForm() {
   return (
     <Card className="w-full max-w-2xl mx-auto">
       <CardHeader>
-        <CardTitle>Find Your Sienna Ridge Dream Home</CardTitle>
+        <CardTitle>Find Your Southwest Las Vegas Dream Home</CardTitle>
         <CardDescription>
-          Get expert guidance from Dr. Janet Duffy, your premier Sienna Ridge buyer agent
+          Get expert guidance from Dr. Jan Duffy, your premier Spring Valley & Southwest Las Vegas buyer agent
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -146,7 +146,7 @@ export default function LeadForm() {
           </div>
 
           <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-            Get Expert Guidance from Dr. Janet Duffy
+            Get Expert Guidance from Dr. Jan Duffy
           </Button>
           
           <div className="text-center mt-4 pt-4 border-t">

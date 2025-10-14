@@ -54,13 +54,94 @@ declare global {
 }
 
 export const metadata: Metadata = {
-  title: 'Southwest Las Vegas Real Estate - Dr. Jan Duffy, Spring Valley Specialist',
-  description: 'Find your dream home in Southwest Las Vegas / Spring Valley (89117, 89147, 89148) with Dr. Jan Duffy. Expert guidance for families, investors, and first-time buyers in this outperforming market.',
+  title: 'Spring Valley Real Estate Agent | Dr. Jan Duffy | Southwest Las Vegas Homes 89117 89147 89148',
+  description: 'Top Spring Valley real estate agent Dr. Jan Duffy specializes in Southwest Las Vegas homes (89117, 89147, 89148). Expert buyer agent for families, investors & first-time buyers. Free home valuation & MLS search.',
+  keywords: [
+    'Spring Valley real estate agent',
+    'Southwest Las Vegas homes for sale',
+    '89117 homes',
+    '89147 homes', 
+    '89148 homes',
+    'Las Vegas real estate',
+    'Dr. Jan Duffy realtor',
+    'Spring Valley homes',
+    'Southwest Las Vegas real estate',
+    'Las Vegas buyer agent',
+    'Nevada real estate agent',
+    'Las Vegas investment properties',
+    'Spring Valley new homes',
+    'Las Vegas home valuation',
+    'best real estate agent Las Vegas'
+  ],
 }
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      {/* FAQ Schema Markup */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What areas does Dr. Jan Duffy serve in Southwest Las Vegas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dr. Jan Duffy specializes in Spring Valley and Southwest Las Vegas, specifically serving the zip codes 89117, 89147, and 89148. She has extensive knowledge of these neighborhoods and can help you find the perfect home in any of these areas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much do homes cost in Spring Valley Las Vegas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Spring Valley home prices range from $350,000 to $650,000, depending on size, condition, and location. Established homes in 89117 and 89147 typically range from $350,000-$500,000, while newer developments in 89148 can reach $450,000-$650,000."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Spring Valley a good area to buy a home in Las Vegas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, Spring Valley is an excellent area for home buyers. It offers established neighborhoods, great schools, convenient access to the Strip and airport, and strong appreciation potential. The area is expected to outperform metro averages in 2025."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes Dr. Jan Duffy the best Spring Valley real estate agent?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dr. Jan Duffy has helped over 100 families find their dream homes in Spring Valley and Southwest Las Vegas. She offers personalized service, expert local knowledge, and specializes in buyer representation for families, investors, and first-time buyers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I get a free home valuation for my Las Vegas property?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can get a free, instant home valuation using our online tool above, or contact Dr. Jan Duffy directly for a comprehensive market analysis. She provides accurate, data-driven valuations for all Southwest Las Vegas properties."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of homes are available in Southwest Las Vegas zip codes 89117, 89147, 89148?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Southwest Las Vegas offers diverse housing options including single-story homes (1,800-2,400 sq ft), two-story homes (2,200-3,200 sq ft), and executive properties (3,000+ sq ft). You'll find established neighborhoods, new construction, and excellent investment opportunities."
+                }
+              }
+            ]
+          }
+        `}
+      </Script>
+      
       {/* RealScout Script */}
       <Script
         src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
@@ -77,10 +158,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Southwest Las Vegas Real Estate
+              Spring Valley Real Estate Agent | Dr. Jan Duffy | Southwest Las Vegas Homes
             </h1>
             <p className="text-xl mb-8 text-blue-100">
-              Discover homes in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier area specialist
+              Find your dream home in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier Spring Valley real estate agent and buyer specialist
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
@@ -771,11 +852,51 @@ export default function HomePage() {
       </section>
 
 
+      {/* FAQ Section for Featured Snippets */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions About Spring Valley Real Estate</h2>
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">What areas does Dr. Jan Duffy serve in Southwest Las Vegas?</h3>
+                <p className="text-gray-700">Dr. Jan Duffy specializes in Spring Valley and Southwest Las Vegas, specifically serving the zip codes 89117, 89147, and 89148. She has extensive knowledge of these neighborhoods and can help you find the perfect home in any of these areas.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">How much do homes cost in Spring Valley Las Vegas?</h3>
+                <p className="text-gray-700">Spring Valley home prices range from $350,000 to $650,000, depending on size, condition, and location. Established homes in 89117 and 89147 typically range from $350,000-$500,000, while newer developments in 89148 can reach $450,000-$650,000.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">Is Spring Valley a good area to buy a home in Las Vegas?</h3>
+                <p className="text-gray-700">Yes, Spring Valley is an excellent area for home buyers. It offers established neighborhoods, great schools, convenient access to the Strip and airport, and strong appreciation potential. The area is expected to outperform metro averages in 2025.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">What makes Dr. Jan Duffy the best Spring Valley real estate agent?</h3>
+                <p className="text-gray-700">Dr. Jan Duffy has helped over 100 families find their dream homes in Spring Valley and Southwest Las Vegas. She offers personalized service, expert local knowledge, and specializes in buyer representation for families, investors, and first-time buyers.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">How can I get a free home valuation for my Las Vegas property?</h3>
+                <p className="text-gray-700">You can get a free, instant home valuation using our online tool above, or contact Dr. Jan Duffy directly for a comprehensive market analysis. She provides accurate, data-driven valuations for all Southwest Las Vegas properties.</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-3 text-blue-600">What types of homes are available in Southwest Las Vegas zip codes 89117, 89147, 89148?</h3>
+                <p className="text-gray-700">Southwest Las Vegas offers diverse housing options including single-story homes (1,800-2,400 sq ft), two-story homes (2,200-3,200 sq ft), and executive properties (3,000+ sq ft). You'll find established neighborhoods, new construction, and excellent investment opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Find Your Southwest Las Vegas Home?</h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Find Your Spring Valley Home?</h2>
             <p className="text-xl mb-8">
               Let Dr. Jan Duffy guide you through your home buying journey in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with expert knowledge and personalized service.
             </p>
