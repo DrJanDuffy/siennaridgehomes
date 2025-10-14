@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
-  description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.',
-  keywords: ['Sienna Ridge', 'Las Vegas real estate', 'Dr. Janet Duffy', 'new homes', 'Lennar homes', 'Las Vegas homes', 'real estate agent', 'buyer agent', 'Nevada real estate'],
-  authors: [{ name: 'Dr. Janet Duffy' }],
-  creator: 'Dr. Janet Duffy',
+  title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
+  description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.',
+  keywords: ['Sienna Ridge', 'Las Vegas real estate', 'Dr. Jan Duffy', 'new homes', 'Lennar homes', 'Las Vegas homes', 'real estate agent', 'buyer agent', 'Nevada real estate'],
+  authors: [{ name: 'Dr. Jan Duffy' }],
+  creator: 'Dr. Jan Duffy',
   publisher: 'Sienna Ridge Homes',
   robots: {
     index: true,
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     google: 'YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', // Replace with your actual verification code
   },
   openGraph: {
-    title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
-    description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes and luxury properties.',
+    title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
+    description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy, your premier buyer agent. Expert guidance for new construction homes and luxury properties.',
     url: 'https://www.siennaridgehomes.com',
     siteName: 'Sienna Ridge Homes',
     images: ['/og-image.png'],
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
-    description: 'Find your dream home in Sienna Ridge, Las Vegas with expert guidance from Dr. Janet Duffy.',
+    title: 'Sienna Ridge | Homes By Dr. Jan Duffy',
+    description: 'Find your dream home in Sienna Ridge, Las Vegas with expert guidance from Dr. Jan Duffy.',
     images: ['/og-image.png'],
     creator: '@DrJanDuffy',
   },
@@ -89,8 +89,8 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate",
-              "description": "Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.",
+              "name": "Sienna Ridge | Homes By Dr. Jan Duffy",
+              "description": "Find your dream home in Sienna Ridge, Las Vegas with Dr. Jan Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.",
               "url": "https://www.siennaridgehomes.com",
               "applicationCategory": "RealEstateApplication",
               "operatingSystem": "Web Browser",
@@ -101,7 +101,7 @@ export default function RootLayout({
               },
               "author": {
                 "@type": "Person",
-                "name": "Dr. Janet Duffy",
+                "name": "Dr. Jan Duffy",
                 "url": "https://www.siennaridgehomes.com"
               },
               "publisher": {
@@ -109,7 +109,7 @@ export default function RootLayout({
                 "name": "Sienna Ridge Homes",
                 "url": "https://www.siennaridgehomes.com"
               },
-              "keywords": "Sienna Ridge, Las Vegas real estate, Dr. Janet Duffy, new homes, Lennar homes, Las Vegas homes, real estate agent, buyer agent, Nevada real estate"
+              "keywords": "Sienna Ridge, Las Vegas real estate, Dr. Jan Duffy, new homes, Lennar homes, Las Vegas homes, real estate agent, buyer agent, Nevada real estate"
             }
           `}
         </Script>
