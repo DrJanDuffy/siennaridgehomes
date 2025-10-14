@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import LeadForm from '@/components/lead-form'
+import Script from 'next/script'
 import { 
   Home, 
   MapPin, 
@@ -15,7 +16,8 @@ import {
   ArrowRight,
   CheckCircle,
   Award,
-  TrendingUp
+  TrendingUp,
+  DollarSign
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -26,6 +28,12 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen">
+      {/* RealScout Script */}
+      <Script
+        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+        type="module"
+        strategy="afterInteractive"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4">
@@ -92,6 +100,78 @@ export default function HomePage() {
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
                 <div className="text-gray-600">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Home Valuation Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Get Your Home's Value</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover what your Sienna Ridge property is worth with our instant valuation tool
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold mb-6">Why Get a Home Valuation?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <DollarSign className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Accurate Market Value</h4>
+                      <p className="text-gray-600">Get instant, data-driven property valuations</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <TrendingUp className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Market Trends</h4>
+                      <p className="text-gray-600">Understand current market conditions and trends</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Local Expertise</h4>
+                      <p className="text-gray-600">Sienna Ridge area-specific valuations</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-center flex items-center justify-center gap-2">
+                      <DollarSign className="h-5 w-5 text-blue-600" />
+                      Instant Home Valuation
+                    </CardTitle>
+                    <CardDescription className="text-center">
+                      Get your property's estimated value in seconds
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    <realscout-home-value 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-hvw-background-color': '#ffffff',
+                        '--rs-hvw-title-color': '#000000',
+                        '--rs-hvw-subtitle-color': 'rgba(28, 30, 38, 0.5)',
+                        '--rs-hvw-primary-button-text-color': '#ffffff',
+                        '--rs-hvw-primary-button-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-text-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-color': '#ffffff',
+                        '--rs-hvw-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
