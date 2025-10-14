@@ -20,9 +20,14 @@ export default function AboutPage() {
         strategy="afterInteractive"
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80')" }}
+        ></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Meet Dr. Jan Duffy
             </h1>
@@ -53,15 +58,11 @@ export default function AboutPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                {/* Placeholder for Dr. Janet Duffy's professional photo */}
-                <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Users className="h-16 w-16 mx-auto mb-4" />
-                    <p className="text-lg font-semibold">Professional Photo</p>
-                    <p className="text-sm">Dr. Jan Duffy</p>
-                    <p className="text-xs mt-2">Replace with professional headshot</p>
-                  </div>
-                </div>
+                {/* Professional photo */}
+                <div 
+                  className="rounded-lg h-96 bg-cover bg-center bg-no-repeat shadow-lg"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
               </div>
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-900">

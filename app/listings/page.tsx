@@ -22,9 +22,14 @@ export default function ListingsPage() {
         strategy="afterInteractive"
       />
       {/* Header Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="relative py-12 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+        ></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Sienna Ridge Homes for Sale
             </h1>
@@ -338,13 +343,10 @@ export default function ListingsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Sample Property 1 */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Property Photo</p>
-                    <p className="text-xs">Replace with MLS image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-green-100 text-green-800">
@@ -384,13 +386,10 @@ export default function ListingsPage() {
 
               {/* Sample Property 2 */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Property Photo</p>
-                    <p className="text-xs">Replace with MLS image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-blue-100 text-blue-800">
@@ -430,13 +429,10 @@ export default function ListingsPage() {
 
               {/* Sample Property 3 */}
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Property Photo</p>
-                    <p className="text-xs">Replace with MLS image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant="secondary" className="bg-purple-100 text-purple-800">

@@ -35,10 +35,15 @@ export default function HomePage() {
         strategy="afterInteractive"
       />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80')" }}
+        ></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
                   Sienna Ridge by Lennar
@@ -168,12 +173,17 @@ export default function HomePage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card>
-                <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-blue-800">
-                    <Home className="h-16 w-16 mx-auto mb-4" />
-                    <p className="text-lg font-semibold">Single Story</p>
-                    <p className="text-sm">1,800 - 2,400 sq ft</p>
+              <Card className="overflow-hidden">
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat relative"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80')" }}
+                >
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <Home className="h-16 w-16 mx-auto mb-4" />
+                      <p className="text-lg font-semibold">Single Story</p>
+                      <p className="text-sm">1,800 - 2,400 sq ft</p>
+                    </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -198,12 +208,17 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card>
-                <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-green-800">
-                    <Home className="h-16 w-16 mx-auto mb-4" />
-                    <p className="text-lg font-semibold">Two Story</p>
-                    <p className="text-sm">2,200 - 3,200 sq ft</p>
+              <Card className="overflow-hidden">
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat relative"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80')" }}
+                >
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <Home className="h-16 w-16 mx-auto mb-4" />
+                      <p className="text-lg font-semibold">Two Story</p>
+                      <p className="text-sm">2,200 - 3,200 sq ft</p>
+                    </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -228,12 +243,17 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card>
-                <div className="bg-gradient-to-br from-purple-100 to-purple-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-purple-800">
-                    <Home className="h-16 w-16 mx-auto mb-4" />
-                    <p className="text-lg font-semibold">Executive</p>
-                    <p className="text-sm">3,000+ sq ft</p>
+              <Card className="overflow-hidden">
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat relative"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                >
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <Home className="h-16 w-16 mx-auto mb-4" />
+                      <p className="text-lg font-semibold">Executive</p>
+                      <p className="text-sm">3,000+ sq ft</p>
+                    </div>
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -451,15 +471,12 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Model 1 - Placeholder */}
+              {/* Model 1 */}
               <Card className="overflow-hidden">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Model Photo</p>
-                    <p className="text-xs">Replace with licensed Lennar image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">1594 Sienna Ridge</h3>
                   <div className="space-y-2 text-gray-600">
@@ -486,15 +503,12 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              {/* Model 2 - Placeholder */}
+              {/* Model 2 */}
               <Card className="overflow-hidden">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Model Photo</p>
-                    <p className="text-xs">Replace with licensed Lennar image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">1760 Sienna Ridge</h3>
                   <div className="space-y-2 text-gray-600">
@@ -521,15 +535,12 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              {/* Model 3 - Placeholder */}
+              {/* Model 3 */}
               <Card className="overflow-hidden">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <Home className="h-12 w-12 mx-auto mb-2" />
-                    <p className="text-sm">Model Photo</p>
-                    <p className="text-xs">Replace with licensed Lennar image</p>
-                  </div>
-                </div>
+                <div 
+                  className="h-48 bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')" }}
+                ></div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">2270 Sienna Ridge</h3>
                   <div className="space-y-2 text-gray-600">
