@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search } from 'lucide-react'
+import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search, TrendingUp, Star } from 'lucide-react'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
@@ -35,6 +35,71 @@ export default function ListingsPage() {
               <Home className="h-4 w-4 mr-2" />
               Live MLS Listings
             </Badge>
+          </div>
+        </div>
+      </section>
+
+      {/* Market Overview Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Sienna Ridge Real Estate Market Overview</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Sienna Ridge represents one of Las Vegas's most desirable master-planned communities, 
+                offering luxury new construction homes with exceptional amenities and investment potential.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <TrendingUp className="h-5 w-5 text-blue-600" />
+                    Market Trends
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    The Sienna Ridge market continues to show strong appreciation with increasing demand 
+                    for new construction homes. Properties in this area maintain excellent resale value 
+                    due to the community's amenities and location.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-blue-600" />
+                    Location Benefits
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Strategically located with easy access to major highways, shopping centers, 
+                    entertainment venues, and the Las Vegas Strip. Close proximity to McCarran 
+                    Airport makes travel convenient.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Star className="h-5 w-5 text-blue-600" />
+                    Community Amenities
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Residents enjoy resort-style amenities including community pools, fitness centers, 
+                    parks, playgrounds, and walking trails. The master-planned community offers 
+                    an exceptional lifestyle.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>

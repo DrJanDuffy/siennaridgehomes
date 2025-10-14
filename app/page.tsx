@@ -84,7 +84,13 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Why Choose Dr. Jan Duffy for Sienna Ridge?</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                With years of experience in Las Vegas real estate, Dr. Jan Duffy has helped over 100 families find their dream homes in Sienna Ridge and surrounding areas.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center mb-12">
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
                 <div className="text-gray-600">Happy Clients</div>
@@ -101,6 +107,50 @@ export default function HomePage() {
                 <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
                 <div className="text-gray-600">Client Satisfaction</div>
               </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Award className="h-5 w-5 text-blue-600" />
+                    Expert Local Knowledge
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Dr. Jan Duffy has extensive knowledge of Sienna Ridge, including neighborhood amenities, 
+                    school districts, and future development plans. Her expertise ensures you make informed decisions.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Users className="h-5 w-5 text-blue-600" />
+                    Personalized Service
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Every client receives personalized attention and customized search strategies. 
+                    Dr. Jan Duffy takes the time to understand your unique needs and preferences.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <TrendingUp className="h-5 w-5 text-blue-600" />
+                    Market Expertise
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">
+                    Stay ahead of market trends with Dr. Jan Duffy's insights into Las Vegas real estate. 
+                    She helps you understand market conditions and timing for optimal results.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
