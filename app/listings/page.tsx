@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search } from 'lucide-react'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Sienna Ridge Homes for Sale - Available Listings',
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
 export default function ListingsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* RealScout Script */}
+      <Script
+        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+        type="module"
+        strategy="afterInteractive"
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
         <div className="container mx-auto px-4">
@@ -128,35 +135,65 @@ export default function ListingsPage() {
         </div>
       </section>
 
-      {/* RealScout Integration Placeholder */}
+      {/* RealScout Integration */}
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold mb-4">Live MLS Listings</h2>
               <p className="text-gray-600">
-                RealScout integration will display live MLS listings here
+                Search available properties in Sienna Ridge and surrounding areas
               </p>
             </div>
 
-            {/* Placeholder for RealScout widget */}
-            <Card className="mb-8">
-              <CardContent className="p-12 text-center">
-                <div className="bg-blue-50 rounded-lg p-8">
-                  <Home className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-2">RealScout Integration</h3>
-                  <p className="text-gray-600 mb-4">
-                    Live MLS listings will appear here once RealScout API is configured
-                  </p>
-                  <div className="text-sm text-gray-500">
-                    <p>• Real-time property data</p>
-                    <p>• Advanced search and filtering</p>
-                    <p>• Property details and photos</p>
-                    <p>• Direct contact integration</p>
+            {/* RealScout Search Widgets */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              {/* Simple Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Quick Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Find properties with a simple search
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-simple-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-ss-font-primary-color': '#6a6d72',
+                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                        '--rs-ss-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+
+              {/* Advanced Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Advanced Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Detailed search with filters and criteria
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-advanced-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-as-button-text-color': '#ffffff',
+                        '--rs-as-background-color': '#ffffff',
+                        '--rs-as-button-color': 'rgb(35, 93, 137)',
+                        '--rs-as-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Sample Property Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

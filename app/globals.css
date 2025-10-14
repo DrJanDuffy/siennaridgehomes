@@ -189,3 +189,19 @@
     flex-direction: column !important;
   }
 }
+
+/* RealScout Simple Search Widget Styles */
+realscout-simple-search {
+  --rs-ss-font-primary-color: #6a6d72;
+  --rs-ss-searchbar-border-color: hsl(0, 0%, 80%);
+  --rs-ss-box-shadow: 0 10px 15px -3px #0000001a;
+  --rs-ss-widget-width: 100%;
+}
+
+/* RealScout Advanced Search Widget Styles */
+realscout-advanced-search {
+  --rs-as-button-text-color: #ffffff;
+  --rs-as-background-color: #ffffff;
+  --rs-as-button-color: rgb(35, 93, 137);
+  --rs-as-widget-width: 100%;
+}
