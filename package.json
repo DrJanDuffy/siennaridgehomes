@@ -2,6 +2,7 @@
   "name": "simple-v0",
   "version": "0.1.5",
   "private": true,
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
