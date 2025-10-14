@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Simple v0 - AI-Powered App Generator',
-  description: 'The simplest way to use v0 - just prompt and see your app generated instantly. Build AI-powered apps with real-time generation and seamless deployment to Vercel.',
-  keywords: ['v0', 'AI', 'app generator', 'Next.js', 'React', 'Vercel', 'artificial intelligence', 'code generation'],
+  title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
+  description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.',
+  keywords: ['Sienna Ridge', 'Las Vegas real estate', 'Dr. Janet Duffy', 'new homes', 'Lennar homes', 'Las Vegas homes', 'real estate agent', 'buyer agent', 'Nevada real estate'],
   authors: [{ name: 'Dr. Janet Duffy' }],
   creator: 'Dr. Janet Duffy',
   publisher: 'Sienna Ridge Homes',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     google: 'YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE', // Replace with your actual verification code
   },
   openGraph: {
-    title: 'Simple v0 - AI-Powered App Generator',
-    description: 'The simplest way to use v0 - just prompt and see your app generated instantly. Build AI-powered apps with real-time generation and seamless deployment to Vercel.',
+    title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
+    description: 'Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes and luxury properties.',
     url: 'https://www.siennaridgehomes.com',
     siteName: 'Sienna Ridge Homes',
     images: ['/og-image.png'],
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Simple v0 - AI-Powered App Generator',
-    description: 'The simplest way to use v0 - just prompt and see your app generated instantly.',
+    title: 'Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate',
+    description: 'Find your dream home in Sienna Ridge, Las Vegas with expert guidance from Dr. Janet Duffy.',
     images: ['/og-image.png'],
     creator: '@DrJanDuffy',
   },
@@ -89,10 +89,10 @@ export default function RootLayout({
             {
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Simple v0 - AI-Powered App Generator",
-              "description": "The simplest way to use v0 - just prompt and see your app generated instantly. Build AI-powered apps with real-time generation and seamless deployment to Vercel.",
+              "name": "Sienna Ridge Homes - Dr. Janet Duffy, Las Vegas Real Estate",
+              "description": "Find your dream home in Sienna Ridge, Las Vegas with Dr. Janet Duffy, your premier buyer agent. Expert guidance for new construction homes, luxury properties, and investment opportunities.",
               "url": "https://www.siennaridgehomes.com",
-              "applicationCategory": "DeveloperApplication",
+              "applicationCategory": "RealEstateApplication",
               "operatingSystem": "Web Browser",
               "offers": {
                 "@type": "Offer",
@@ -109,7 +109,7 @@ export default function RootLayout({
                 "name": "Sienna Ridge Homes",
                 "url": "https://www.siennaridgehomes.com"
               },
-              "keywords": "v0, AI, app generator, Next.js, React, Vercel, artificial intelligence, code generation"
+              "keywords": "Sienna Ridge, Las Vegas real estate, Dr. Janet Duffy, new homes, Lennar homes, Las Vegas homes, real estate agent, buyer agent, Nevada real estate"
             }
           `}
         </Script>
