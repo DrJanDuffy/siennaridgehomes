@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Home, Phone } from 'lucide-react'
 
 export default function LeadForm() {
   const [formData, setFormData] = useState({
@@ -147,6 +148,24 @@ export default function LeadForm() {
           <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
             Get Expert Guidance from Dr. Janet Duffy
           </Button>
+          
+          <div className="text-center mt-4 pt-4 border-t">
+            <p className="text-sm text-gray-600 mb-3">Want to search properties right now?</p>
+            <div className="space-y-2">
+              <Button variant="outline" size="sm" className="w-full">
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                  <Home className="h-4 w-4 mr-2" />
+                  Browse Available Properties
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" className="w-full">
+                <a href="http://drjanduffy.realscout.com/onboarding" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                  <Phone className="h-4 w-4 mr-2" />
+                  Create Custom Search
+                </a>
+              </Button>
+            </div>
+          </div>
         </form>
       </CardContent>
     </Card>

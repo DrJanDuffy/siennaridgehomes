@@ -259,8 +259,10 @@ export default function ListingsPage() {
                       Call Office
                     </Button>
                     <Button variant="outline" className="flex-1">
-                      <MapPin className="h-4 w-4 mr-2" />
-                      Get Directions
+                      <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <Home className="h-4 w-4 mr-2" />
+                        Search Properties
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -307,7 +309,9 @@ export default function ListingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="text-xl font-bold text-blue-600">$485,000</div>
                     <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-                      Contact Dr. Duffy
+                      <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        Search Properties
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -351,7 +355,9 @@ export default function ListingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="text-xl font-bold text-blue-600">$525,000</div>
                     <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-                      Contact Dr. Duffy
+                      <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        Search Properties
+                      </a>
                     </Button>
                   </div>
                 </CardContent>
@@ -395,7 +401,9 @@ export default function ListingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="text-xl font-bold text-blue-600">$675,000</div>
                     <Button size="sm" className="bg-blue-600 hover:bg-blue-700">
-                      Contact Dr. Duffy
+                      <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        Search Properties
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

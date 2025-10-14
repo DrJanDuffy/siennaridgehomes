@@ -356,6 +356,12 @@ export default function AboutPage() {
                 <Mail className="h-4 w-4 mr-2" />
                 Email DrJanSells@SiennaRidgeHomes.com
               </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <Home className="h-4 w-4 mr-2" />
+                  Search Properties
+                </a>
+              </Button>
             </div>
           </div>
         </div>

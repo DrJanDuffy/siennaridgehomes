@@ -41,10 +41,10 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Your Sienna Ridge Home Awaits
+                  Sienna Ridge by Lennar
                 </h1>
                 <p className="text-xl mb-8 text-blue-100">
-                  Expert guidance from Dr. Jan Duffy, your premier buyer agent for Sienna Ridge, Las Vegas
+                  Discover luxury new construction homes in Las Vegas with Dr. Jan Duffy, your premier Sienna Ridge specialist
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8">
                   <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
@@ -100,6 +100,146 @@ export default function HomePage() {
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">100%</div>
                 <div className="text-gray-600">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lennar Home Models Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Lennar Home Models at Sienna Ridge</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Discover Lennar's innovative home designs featuring smart home technology and energy-efficient features
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card>
+                <div className="bg-gradient-to-br from-blue-100 to-blue-200 h-48 flex items-center justify-center">
+                  <div className="text-center text-blue-800">
+                    <Home className="h-16 w-16 mx-auto mb-4" />
+                    <p className="text-lg font-semibold">Single Story</p>
+                    <p className="text-sm">1,800 - 2,400 sq ft</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">Single Story Living</h3>
+                  <p className="text-gray-600 mb-4">
+                    Perfect for those seeking convenience and accessibility with open floor plans and modern finishes.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Bedrooms:</span>
+                      <span>3-4</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Bathrooms:</span>
+                      <span>2-3</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Starting From:</span>
+                      <span className="font-semibold text-blue-600">$450,000</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <div className="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
+                  <div className="text-center text-green-800">
+                    <Home className="h-16 w-16 mx-auto mb-4" />
+                    <p className="text-lg font-semibold">Two Story</p>
+                    <p className="text-sm">2,200 - 3,200 sq ft</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">Two Story Homes</h3>
+                  <p className="text-gray-600 mb-4">
+                    Spacious two-story designs with gourmet kitchens, master suites, and flexible living spaces.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Bedrooms:</span>
+                      <span>4-5</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Bathrooms:</span>
+                      <span>3-4</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Starting From:</span>
+                      <span className="font-semibold text-blue-600">$525,000</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <div className="bg-gradient-to-br from-purple-100 to-purple-200 h-48 flex items-center justify-center">
+                  <div className="text-center text-purple-800">
+                    <Home className="h-16 w-16 mx-auto mb-4" />
+                    <p className="text-lg font-semibold">Executive</p>
+                    <p className="text-sm">3,000+ sq ft</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">Executive Collection</h3>
+                  <p className="text-gray-600 mb-4">
+                    Luxury executive homes with premium finishes, large lots, and resort-style outdoor living.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>Bedrooms:</span>
+                      <span>4-6</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Bathrooms:</span>
+                      <span>4-5</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Starting From:</span>
+                      <span className="font-semibold text-blue-600">$650,000</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <h3 className="text-2xl font-bold mb-4">Lennar's Signature Features</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                    <Home className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Smart Home</h4>
+                  <p className="text-sm text-gray-600">Wi-Fi Certified smart home technology included</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                    <Star className="h-8 w-8 text-green-600" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Energy Efficient</h4>
+                  <p className="text-sm text-gray-600">ENERGY STAR certified appliances and features</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                    <Award className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Everything Included</h4>
+                  <p className="text-sm text-gray-600">Premium finishes and features included in base price</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                    <Users className="h-8 w-8 text-orange-600" />
+                  </div>
+                  <h4 className="font-semibold mb-2">Warranty</h4>
+                  <p className="text-sm text-gray-600">Comprehensive warranty coverage and support</p>
+                </div>
               </div>
             </div>
           </div>
@@ -187,10 +327,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Welcome to Sienna Ridge</h2>
+              <h2 className="text-3xl font-bold mb-4">Welcome to Sienna Ridge by Lennar</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                A premier master-planned community in Las Vegas offering luxury homes, 
-                world-class amenities, and an exceptional lifestyle.
+                Experience luxury living in Las Vegas with Lennar's newest master-planned community. 
+                Featuring stunning new construction homes, resort-style amenities, and an exceptional lifestyle.
               </p>
             </div>
             
@@ -205,7 +345,7 @@ export default function HomePage() {
                 <CardContent>
                   <p className="text-gray-600">
                     Strategically located in Las Vegas with easy access to major highways, 
-                    shopping centers, and entertainment venues.
+                    shopping centers, and entertainment venues. Close to the Las Vegas Strip and McCarran Airport.
                   </p>
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                     <p className="text-sm font-semibold text-blue-800">Dr. Jan Duffy's Office</p>
@@ -224,8 +364,8 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Enjoy resort-style amenities including pools, fitness centers, 
-                    parks, and walking trails throughout the community.
+                    Enjoy Lennar's signature resort-style amenities including community pools, fitness centers, 
+                    parks, playgrounds, and walking trails throughout the master-planned community.
                   </p>
                 </CardContent>
               </Card>
@@ -467,14 +607,20 @@ export default function HomePage() {
               Let Dr. Jan Duffy guide you through your home buying journey with expert knowledge and personalized service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Phone className="h-4 w-4 mr-2" />
-                Call (702) 555-0123
-              </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                    <Mail className="h-4 w-4 mr-2" />
-                    Email DrJanSells@SiennaRidgeHomes.com
-                  </Button>
+                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                  <Phone className="h-4 w-4 mr-2" />
+                  Call (702) 555-0123
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                  <Mail className="h-4 w-4 mr-2" />
+                  Email DrJanSells@SiennaRidgeHomes.com
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                  <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <Home className="h-4 w-4 mr-2" />
+                    Search Properties
+                  </a>
+                </Button>
             </div>
           </div>
         </div>
