@@ -195,6 +195,30 @@ export default function ListingsPage() {
               </Card>
             </div>
 
+            {/* RealScout Office Listings */}
+            <Card className="mb-8">
+              <CardHeader>
+                <CardTitle className="text-center">Featured Sienna Ridge Homes</CardTitle>
+                <CardDescription className="text-center">
+                  Current listings in the Sienna Ridge area - $500K to $600K range
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
+                <realscout-office-listings 
+                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                  sort-order="NEWEST" 
+                  listing-status="For Sale,In Contract" 
+                  property-types=",SFR" 
+                  price-min="500000" 
+                  price-max="600000"
+                  style={{
+                    '--rs-listing-divider-color': '#0e64c8',
+                    'width': '100%'
+                  } as React.CSSProperties}
+                />
+              </CardContent>
+            </Card>
+
             {/* Sample Property Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Sample Property 1 */}

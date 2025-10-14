@@ -205,3 +205,9 @@ realscout-advanced-search {
   --rs-as-button-color: rgb(35, 93, 137);
   --rs-as-widget-width: 100%;
 }
+
+/* RealScout Office Listings Widget Styles */
+realscout-office-listings {
+  --rs-listing-divider-color: #0e64c8;
+  width: 100%;
+}
