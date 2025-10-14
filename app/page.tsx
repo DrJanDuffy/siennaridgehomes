@@ -404,6 +404,7 @@ export default function HomePage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="p-6">
+                    {/* @ts-ignore */}
                     <realscout-home-value 
                       agent-encoded-id="QWdlbnQtMjI1MDUw"
                       style={{
@@ -628,6 +629,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="flex justify-center">
+                    {/* @ts-ignore */}
                     <realscout-simple-search 
                       agent-encoded-id="QWdlbnQtMjI1MDUw"
                       style={{
@@ -651,6 +653,7 @@ export default function HomePage() {
                 </CardHeader>
                 <CardContent className="p-6">
                   <div className="flex justify-center">
+                    {/* @ts-ignore */}
                     <realscout-advanced-search 
                       agent-encoded-id="QWdlbnQtMjI1MDUw"
                       style={{
@@ -674,6 +677,7 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-6">
+                {/* @ts-ignore */}
                 <realscout-office-listings 
                   agent-encoded-id="QWdlbnQtMjI1MDUw" 
                   sort-order="NEWEST" 

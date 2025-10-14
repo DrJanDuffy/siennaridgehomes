@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search, TrendingUp, Star } from 'lucide-react'
+import { Home, MapPin, Bed, Bath, Square, DollarSign, Filter, Search, TrendingUp, Star, Phone } from 'lucide-react'
 import Script from 'next/script'
 
 // Type declarations for RealScout web components
@@ -255,17 +255,18 @@ export default function ListingsPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <div className="flex justify-center">
-                    <realscout-simple-search 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-ss-font-primary-color': '#6a6d72',
-                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
-                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
-                        '--rs-ss-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
-                  </div>
+                    <div className="flex justify-center">
+                      {/* @ts-ignore */}
+                      <realscout-simple-search 
+                        agent-encoded-id="QWdlbnQtMjI1MDUw"
+                        style={{
+                          '--rs-ss-font-primary-color': '#6a6d72',
+                          '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                          '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                          '--rs-ss-widget-width': '100%'
+                        } as React.CSSProperties}
+                      />
+                    </div>
                 </CardContent>
               </Card>
 
@@ -278,17 +279,18 @@ export default function ListingsPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <div className="flex justify-center">
-                    <realscout-advanced-search 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-as-button-text-color': '#ffffff',
-                        '--rs-as-background-color': '#ffffff',
-                        '--rs-as-button-color': 'rgb(35, 93, 137)',
-                        '--rs-as-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
-                  </div>
+                    <div className="flex justify-center">
+                      {/* @ts-ignore */}
+                      <realscout-advanced-search 
+                        agent-encoded-id="QWdlbnQtMjI1MDUw"
+                        style={{
+                          '--rs-as-button-text-color': '#ffffff',
+                          '--rs-as-background-color': '#ffffff',
+                          '--rs-as-button-color': 'rgb(35, 93, 137)',
+                          '--rs-as-widget-width': '100%'
+                        } as React.CSSProperties}
+                      />
+                    </div>
                 </CardContent>
               </Card>
             </div>
@@ -302,18 +304,19 @@ export default function ListingsPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-6">
-                <realscout-office-listings 
-                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                  sort-order="NEWEST" 
-                  listing-status="For Sale,In Contract" 
-                  property-types=",SFR" 
-                  price-min="500000" 
-                  price-max="600000"
-                  style={{
-                    '--rs-listing-divider-color': '#0e64c8',
-                    'width': '100%'
-                  } as React.CSSProperties}
-                />
+                    {/* @ts-ignore */}
+                    <realscout-office-listings 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                      sort-order="NEWEST" 
+                      listing-status="For Sale,In Contract" 
+                      property-types=",SFR" 
+                      price-min="500000" 
+                      price-max="600000"
+                      style={{
+                        '--rs-listing-divider-color': '#0e64c8',
+                        'width': '100%'
+                      } as React.CSSProperties}
+                    />
               </CardContent>
             </Card>
 

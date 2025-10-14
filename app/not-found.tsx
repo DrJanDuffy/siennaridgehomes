@@ -156,6 +156,7 @@ export default function NotFound() {
               <CardContent className="p-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="flex justify-center">
+                    {/* @ts-ignore */}
                     <realscout-simple-search 
                       agent-encoded-id="QWdlbnQtMjI1MDUw"
                       style={{
@@ -167,6 +168,7 @@ export default function NotFound() {
                     />
                   </div>
                   <div className="flex justify-center">
+                    {/* @ts-ignore */}
                     <realscout-home-value 
                       agent-encoded-id="QWdlbnQtMjI1MDUw"
                       style={{
