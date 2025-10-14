@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { v0 } from '@vercel/v0-sdk'
+import { v0 } from '@/lib/v0-sdk'
 import { getUserIP, associateProjectWithIP } from '@/lib/rate-limiter'
 
 export async function POST(request: NextRequest) {
