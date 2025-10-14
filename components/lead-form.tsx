@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function LeadForm() {
@@ -84,50 +83,53 @@ export default function LeadForm() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="interestLevel">Interest Level</Label>
-              <Select value={formData.interestLevel} onValueChange={(value) => setFormData({ ...formData, interestLevel: value })}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select your interest level" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="just-looking">Just Looking</SelectItem>
-                  <SelectItem value="serious-buyer">Serious Buyer</SelectItem>
-                  <SelectItem value="ready-to-buy">Ready to Buy</SelectItem>
-                  <SelectItem value="investor">Investor</SelectItem>
-                </SelectContent>
-              </Select>
+              <select
+                id="interestLevel"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.interestLevel}
+                onChange={(e) => setFormData({ ...formData, interestLevel: e.target.value })}
+              >
+                <option value="">Select your interest level</option>
+                <option value="just-looking">Just Looking</option>
+                <option value="serious-buyer">Serious Buyer</option>
+                <option value="ready-to-buy">Ready to Buy</option>
+                <option value="investor">Investor</option>
+              </select>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="timeline">Timeline</Label>
-              <Select value={formData.timeline} onValueChange={(value) => setFormData({ ...formData, timeline: value })}>
-                <SelectTrigger>
-                  <SelectValue placeholder="When are you looking to buy?" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="immediately">Immediately</SelectItem>
-                  <SelectItem value="1-3-months">1-3 Months</SelectItem>
-                  <SelectItem value="3-6-months">3-6 Months</SelectItem>
-                  <SelectItem value="6-12-months">6-12 Months</SelectItem>
-                  <SelectItem value="planning-ahead">Planning Ahead</SelectItem>
-                </SelectContent>
-              </Select>
+              <select
+                id="timeline"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.timeline}
+                onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
+              >
+                <option value="">When are you looking to buy?</option>
+                <option value="immediately">Immediately</option>
+                <option value="1-3-months">1-3 Months</option>
+                <option value="3-6-months">3-6 Months</option>
+                <option value="6-12-months">6-12 Months</option>
+                <option value="planning-ahead">Planning Ahead</option>
+              </select>
             </div>
             <div className="space-y-2">
               <Label htmlFor="budget">Budget Range</Label>
-              <Select value={formData.budget} onValueChange={(value) => setFormData({ ...formData, budget: value })}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select your budget range" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="under-400k">Under $400K</SelectItem>
-                  <SelectItem value="400k-500k">$400K - $500K</SelectItem>
-                  <SelectItem value="500k-600k">$500K - $600K</SelectItem>
-                  <SelectItem value="600k-750k">$600K - $750K</SelectItem>
-                  <SelectItem value="750k-plus">$750K+</SelectItem>
-                </SelectContent>
-              </Select>
+              <select
+                id="budget"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={formData.budget}
+                onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+              >
+                <option value="">Select your budget range</option>
+                <option value="under-400k">Under $400K</option>
+                <option value="400k-500k">$400K - $500K</option>
+                <option value="500k-600k">$500K - $600K</option>
+                <option value="600k-750k">$600K - $750K</option>
+                <option value="750k-plus">$750K+</option>
+              </select>
             </div>
           </div>
 
