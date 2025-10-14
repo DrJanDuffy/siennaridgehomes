@@ -68,52 +68,217 @@ export default function HomePage() {
         strategy="afterInteractive"
       />
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/80"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80')" }}
         ></div>
         <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Southwest Las Vegas Real Estate
+            </h1>
+            <p className="text-xl mb-8 text-blue-100">
+              Discover homes in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier area specialist
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
+                <Award className="h-4 w-4 mr-2" />
+                Licensed Agent
+              </Badge>
+              <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                Spring Valley Expert
+              </Badge>
+              <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
+                <TrendingUp className="h-4 w-4 mr-2" />
+                2025 Market Leader
+              </Badge>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/listings" passHref>
+                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                  <Home className="h-4 w-4 mr-2" />
+                  View Available Homes <ArrowRight className="h-4 w-4 ml-2" />
+                </Button>
+              </Link>
+              <Link href="/about" passHref>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+                  <Calendar className="h-4 w-4 mr-2" />
+                  Schedule Consultation <ArrowRight className="h-4 w-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* RealScout Lead Generation Section - Moved to Top */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Find Your Dream Home Today</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Search live MLS listings and get instant property valuations with Dr. Jan Duffy's expertise in Southwest Las Vegas
+              </p>
+            </div>
+            
+            {/* RealScout Search Widgets */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {/* Simple Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Quick Property Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Find properties with a simple search
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    {/* @ts-ignore */}
+                    <realscout-simple-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-ss-font-primary-color': '#6a6d72',
+                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                        '--rs-ss-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Advanced Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Advanced Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Detailed search with filters and criteria
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    {/* @ts-ignore */}
+                    <realscout-advanced-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-as-button-text-color': '#ffffff',
+                        '--rs-as-background-color': '#ffffff',
+                        '--rs-as-button-color': 'rgb(35, 93, 137)',
+                        '--rs-as-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Home Valuation */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Southwest Las Vegas Real Estate
-                </h1>
-                <p className="text-xl mb-8 text-blue-100">
-                  Discover homes in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) with Dr. Jan Duffy, your premier area specialist
-                </p>
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
-                    <Award className="h-4 w-4 mr-2" />
-                    Licensed Agent
-                  </Badge>
-                  <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
-                    <MapPin className="h-4 w-4 mr-2" />
-                    Spring Valley Expert
-                  </Badge>
-                  <Badge variant="secondary" className="bg-white text-blue-600 px-4 py-2">
-                    <TrendingUp className="h-4 w-4 mr-2" />
-                    2025 Market Leader
-                  </Badge>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                    <Home className="h-4 w-4 mr-2" />
-                    View Available Homes
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                    <Calendar className="h-4 w-4 mr-2" />
-                    Schedule Consultation
-                  </Button>
+                <h3 className="text-2xl font-bold mb-6">Get Your Home's Value</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <DollarSign className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Accurate Market Value</h4>
+                      <p className="text-gray-600">Get instant, data-driven property valuations</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <TrendingUp className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Market Trends</h4>
+                      <p className="text-gray-600">Understand current market conditions and trends</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-6 w-6 text-blue-600 mt-1" />
+                    <div>
+                      <h4 className="font-semibold">Local Expertise</h4>
+                      <p className="text-gray-600">Spring Valley & Southwest Las Vegas area-specific valuations</p>
+                      <div className="mt-2 p-2 bg-gray-100 rounded text-xs">
+                        <p className="font-medium">Coverage Areas:</p>
+                        <p className="text-gray-500">89117, 89147, 89148</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
               <div>
-                <LeadForm />
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-center flex items-center justify-center gap-2">
+                      <DollarSign className="h-5 w-5 text-blue-600" />
+                      Instant Home Valuation
+                    </CardTitle>
+                    <CardDescription className="text-center">
+                      Get your property's estimated value in seconds
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="p-6">
+                    {/* @ts-ignore */}
+                    <realscout-home-value 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-hvw-background-color': '#ffffff',
+                        '--rs-hvw-title-color': '#000000',
+                        '--rs-hvw-subtitle-color': 'rgba(28, 30, 38, 0.5)',
+                        '--rs-hvw-primary-button-text-color': '#ffffff',
+                        '--rs-hvw-primary-button-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-text-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-color': '#ffffff',
+                        '--rs-hvw-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </CardContent>
+                </Card>
               </div>
             </div>
+
+            {/* Featured Listings */}
+            <Card className="mb-12">
+              <CardHeader>
+                <CardTitle className="text-center">Featured Southwest Las Vegas Homes</CardTitle>
+                <CardDescription className="text-center">
+                  Current listings in Spring Valley & Southwest Las Vegas (89117, 89147, 89148) - $400K to $600K range
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
+                {/* @ts-ignore */}
+                <realscout-office-listings 
+                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                  sort-order="NEWEST" 
+                  listing-status="For Sale,In Contract" 
+                  property-types=",SFR" 
+                  price-min="400000" 
+                  price-max="600000"
+                  style={{
+                    '--rs-listing-divider-color': '#0e64c8',
+                    'width': '100%'
+                  } as React.CSSProperties}
+                />
+              </CardContent>
+            </Card>
+
+            {/* Lead Form */}
+            <Card className="max-w-2xl mx-auto">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl font-bold mb-2">
+                  Get Personalized Guidance
+                </CardTitle>
+                <CardDescription className="text-gray-600">
+                  Connect with Dr. Jan Duffy for expert real estate advice
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <LeadForm />
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -605,96 +770,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      {/* RealScout Lead Generation Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Find Your Dream Home Today</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Search live MLS listings and get instant property valuations with Dr. Jan Duffy's expertise
-              </p>
-      </div>
-
-            {/* RealScout Search Widgets */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-              {/* Simple Search */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-center">Quick Property Search</CardTitle>
-                  <CardDescription className="text-center">
-                    Find properties with a simple search
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <div className="flex justify-center">
-                    {/* @ts-ignore */}
-                    <realscout-simple-search 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-ss-font-primary-color': '#6a6d72',
-                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
-                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
-                        '--rs-ss-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Advanced Search */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-center">Advanced Search</CardTitle>
-                  <CardDescription className="text-center">
-                    Detailed search with filters and criteria
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-6">
-                  <div className="flex justify-center">
-                    {/* @ts-ignore */}
-                    <realscout-advanced-search 
-                      agent-encoded-id="QWdlbnQtMjI1MDUw"
-                      style={{
-                        '--rs-as-button-text-color': '#ffffff',
-                        '--rs-as-background-color': '#ffffff',
-                        '--rs-as-button-color': 'rgb(35, 93, 137)',
-                        '--rs-as-widget-width': '100%'
-                      } as React.CSSProperties}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Featured Listings */}
-            <Card className="mb-12">
-              <CardHeader>
-                <CardTitle className="text-center">Featured Sienna Ridge Homes</CardTitle>
-                <CardDescription className="text-center">
-                  Current listings in the Sienna Ridge area - $500K to $600K range
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-6">
-                {/* @ts-ignore */}
-                <realscout-office-listings 
-                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
-                  sort-order="NEWEST" 
-                  listing-status="For Sale,In Contract" 
-                  property-types=",SFR" 
-                  price-min="500000" 
-                  price-max="600000"
-                  style={{
-                    '--rs-listing-divider-color': '#0e64c8',
-                    'width': '100%'
-                  } as React.CSSProperties}
-                />
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action Section */}
       <section className="py-16 bg-blue-600 text-white">
