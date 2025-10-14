@@ -1,4 +1,4 @@
-import { v0, ChatDetail } from 'v0-sdk'
+import { v0, ChatDetail } from '@vercel/v0-sdk'
 import { NextRequest, NextResponse } from 'next/server'
 import {
   checkRateLimit,

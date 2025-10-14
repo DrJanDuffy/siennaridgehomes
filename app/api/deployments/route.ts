@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { v0 } from 'v0-sdk'
+import { v0 } from '@vercel/v0-sdk'
 
 export async function POST(request: NextRequest) {
   try {

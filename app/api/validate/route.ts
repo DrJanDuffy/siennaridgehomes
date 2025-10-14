@@ -1,4 +1,4 @@
-import { v0 } from 'v0-sdk'
+import { v0 } from '@vercel/v0-sdk'
 import { NextResponse } from 'next/server'
 
 export async function GET() {
