@@ -140,6 +140,10 @@ export default function HomePage() {
                     <div>
                       <h4 className="font-semibold">Local Expertise</h4>
                       <p className="text-gray-600">Sienna Ridge area-specific valuations</p>
+                      <div className="mt-2 p-2 bg-gray-100 rounded text-xs">
+                        <p className="font-medium">Example: 8370 Caldera Hills Avenue</p>
+                        <p className="text-gray-500">Las Vegas, NV 89147</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -203,6 +207,11 @@ export default function HomePage() {
                     Strategically located in Las Vegas with easy access to major highways, 
                     shopping centers, and entertainment venues.
                   </p>
+                  <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+                    <p className="text-sm font-semibold text-blue-800">Dr. Jan Duffy's Office</p>
+                    <p className="text-sm text-blue-600">8370 Caldera Hills Avenue</p>
+                    <p className="text-xs text-blue-500">Las Vegas, NV 89147</p>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -362,12 +371,100 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
+      {/* RealScout Lead Generation Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Find Your Dream Home Today</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Search live MLS listings and get instant property valuations with Dr. Jan Duffy's expertise
+              </p>
+            </div>
+            
+            {/* RealScout Search Widgets */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {/* Simple Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Quick Property Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Find properties with a simple search
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-simple-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-ss-font-primary-color': '#6a6d72',
+                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                        '--rs-ss-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Advanced Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Advanced Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Detailed search with filters and criteria
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-advanced-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-as-button-text-color': '#ffffff',
+                        '--rs-as-background-color': '#ffffff',
+                        '--rs-as-button-color': 'rgb(35, 93, 137)',
+                        '--rs-as-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Featured Listings */}
+            <Card className="mb-12">
+              <CardHeader>
+                <CardTitle className="text-center">Featured Sienna Ridge Homes</CardTitle>
+                <CardDescription className="text-center">
+                  Current listings in the Sienna Ridge area - $500K to $600K range
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
+                <realscout-office-listings 
+                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                  sort-order="NEWEST" 
+                  listing-status="For Sale,In Contract" 
+                  property-types=",SFR" 
+                  price-min="500000" 
+                  price-max="600000"
+                  style={{
+                    '--rs-listing-divider-color': '#0e64c8',
+                    'width': '100%'
+                  } as React.CSSProperties}
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to Find Your Sienna Ridge Home?</h2>
             <p className="text-xl mb-8">
-              Let Dr. Janet Duffy guide you through your home buying journey with expert knowledge and personalized service.
+              Let Dr. Jan Duffy guide you through your home buying journey with expert knowledge and personalized service.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">

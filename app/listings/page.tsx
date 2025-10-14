@@ -219,6 +219,54 @@ export default function ListingsPage() {
               </CardContent>
             </Card>
 
+            {/* Featured Property - Dr. Jan Duffy's Office */}
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-center mb-6">Featured Property</h3>
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow max-w-2xl mx-auto">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-800 h-48 flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <Home className="h-16 w-16 mx-auto mb-4" />
+                    <p className="text-lg font-semibold">Dr. Jan Duffy's Office</p>
+                    <p className="text-sm">8370 Caldera Hills Avenue</p>
+                    <p className="text-xs">Las Vegas, NV 89147</p>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-lg font-semibold">8370 Caldera Hills Avenue</h3>
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                      Office Location
+                    </Badge>
+                  </div>
+                  <p className="text-lg font-semibold text-blue-600 mb-2">Dr. Jan Duffy's Real Estate Office</p>
+                  <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
+                    <div className="flex items-center gap-1">
+                      <MapPin className="h-4 w-4" />
+                      <span>Las Vegas, NV 89147</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Phone className="h-4 w-4" />
+                      <span>(702) 555-0123</span>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Visit Dr. Jan Duffy's conveniently located office in the heart of Las Vegas. 
+                    Professional consultation space for all your Sienna Ridge real estate needs.
+                  </p>
+                  <div className="flex gap-2">
+                    <Button className="flex-1">
+                      <Phone className="h-4 w-4 mr-2" />
+                      Call Office
+                    </Button>
+                    <Button variant="outline" className="flex-1">
+                      <MapPin className="h-4 w-4 mr-2" />
+                      Get Directions
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
             {/* Sample Property Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Sample Property 1 */}

@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Phone, Mail, MapPin, Award, Users, Home, Star } from 'lucide-react'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'About Dr. Jan Duffy - Sienna Ridge Real Estate Expert',
@@ -12,6 +13,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* RealScout Script */}
+      <Script
+        src="https://em.realscout.com/widgets/realscout-web-components.umd.js"
+        type="module"
+        strategy="afterInteractive"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div className="container mx-auto px-4">
@@ -242,6 +249,97 @@ export default function AboutPage() {
       </section>
 
       {/* Contact CTA Section */}
+      {/* RealScout Lead Generation Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Start Your Sienna Ridge Search</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Use Dr. Jan Duffy's expert tools to find your perfect home
+              </p>
+            </div>
+            
+            {/* RealScout Search Widgets */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {/* Simple Search */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Quick Property Search</CardTitle>
+                  <CardDescription className="text-center">
+                    Find properties with a simple search
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-simple-search 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-ss-font-primary-color': '#6a6d72',
+                        '--rs-ss-searchbar-border-color': 'hsl(0, 0%, 80%)',
+                        '--rs-ss-box-shadow': '0 10px 15px -3px #0000001a',
+                        '--rs-ss-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Home Valuation */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Get Home Value</CardTitle>
+                  <CardDescription className="text-center">
+                    Instant property valuation
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-6">
+                  <div className="flex justify-center">
+                    <realscout-home-value 
+                      agent-encoded-id="QWdlbnQtMjI1MDUw"
+                      style={{
+                        '--rs-hvw-background-color': '#ffffff',
+                        '--rs-hvw-title-color': '#000000',
+                        '--rs-hvw-subtitle-color': 'rgba(28, 30, 38, 0.5)',
+                        '--rs-hvw-primary-button-text-color': '#ffffff',
+                        '--rs-hvw-primary-button-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-text-color': 'rgb(35, 93, 137)',
+                        '--rs-hvw-secondary-button-color': '#ffffff',
+                        '--rs-hvw-widget-width': '100%'
+                      } as React.CSSProperties}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Featured Listings */}
+            <Card className="mb-12">
+              <CardHeader>
+                <CardTitle className="text-center">Featured Sienna Ridge Homes</CardTitle>
+                <CardDescription className="text-center">
+                  Current listings in the Sienna Ridge area - $500K to $600K range
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
+                <realscout-office-listings 
+                  agent-encoded-id="QWdlbnQtMjI1MDUw" 
+                  sort-order="NEWEST" 
+                  listing-status="For Sale,In Contract" 
+                  property-types=",SFR" 
+                  price-min="500000" 
+                  price-max="600000"
+                  style={{
+                    '--rs-listing-divider-color': '#0e64c8',
+                    'width': '100%'
+                  } as React.CSSProperties}
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
