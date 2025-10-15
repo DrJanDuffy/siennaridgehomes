@@ -14,7 +14,7 @@ export async function GET() {
       lastmod: currentDate,
     },
     {
-      loc: `${baseUrl}/sitemap-local.xml`,
+      loc: `${baseUrl}/sitemap-neighborhoods.xml`,
       lastmod: currentDate,
     },
   ]
